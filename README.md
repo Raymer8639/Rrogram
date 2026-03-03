@@ -1,16 +1,20 @@
 # rrogram
 
-[![Crates.io](https://img.shields.io/crates/v/rrogram.svg)](https://crates.io/crates/rrogram)
-[![Docs.rs](https://docs.rs/rrogram/badge.svg)](https://docs.rs/rrogram)
-[![CI](https://github.com/Raymer8639/rrogram/workflows/CI/badge.svg)](https://github.com/Raymer8639/rrogram/actions)
-
 ## Installation
 
 ### Cargo
 
+#### From Source
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
-* run `cargo install rrogram`
+* Clone this github repository, run:
+  `git clone https://github.com/Raymer8639/Rrogram.git`
+* Enter the github repository, run:
+  `cd Rrogram`
+* Build this project, run:
+  `cargo build --release`
+* Install, run:
+  `cargo install`
 
 ## License
 
