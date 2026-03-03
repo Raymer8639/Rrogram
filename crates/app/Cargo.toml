@@ -1,0 +1,10 @@
+[package]
+name = "rrogram"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+menu = { path = "../menu" }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
