@@ -1,5 +1,7 @@
 # Rrogram
 
+This is just a toy😁
+
 ## Installation
 
 ### From Source
