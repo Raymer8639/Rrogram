@@ -1,31 +1,32 @@
-# rrogram
+# Rrogram
 
 ## Installation
 
-### Cargo
+### From Source
 
-#### From Source
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
 * Clone this github repository, run:
-  `git clone https://github.com/Raymer8639/Rrogram.git`
+
+        git clone https://github.com/Raymer8639/Rrogram.git
+
 * Enter the github repository, run:
-  `cd Rrogram`
-* Build this project, run:
-  `cargo build --release`
-* Install, run:
-  `cargo install`
+
+        cd Rrogram
+
+* Build and install, run:
+
+        cargo install --path crates/app
+
+## Deletion
+
+* Delete this application, run:
+
+        cargo uninstall -p rrogram
 
 ## License
 
-Licensed under either of
-
- * Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
- * MIT license
-   ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
-at your option.
+See [LICENSE.md](LICENSE.md)
 
 ## Contribution
 
