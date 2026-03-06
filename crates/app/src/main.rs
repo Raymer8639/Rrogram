@@ -13,6 +13,7 @@ fn main() {
     loop {
         let user_input: String = get_content::get(None).expect("?");
         let user_input = user_input.as_str();
+
         match user_input {
             "0" => {}
             "1" => {}
