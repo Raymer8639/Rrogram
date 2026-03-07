@@ -8,21 +8,21 @@ This is just a toy😁
 
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
-* Clone this github repository, run:
+* Clone this github repository:
 
         git clone https://github.com/Raymer8639/Rrogram.git
 
-* Enter the github repository, run:
+* Enter the github repository:
 
         cd Rrogram
 
-* Build and install, run:
+* Build and install:
 
         cargo install --path crates/app
 
 ## Deletion
 
-* Delete this application, run:
+* Delete this application:
 
         cargo uninstall -p rrogram
 
