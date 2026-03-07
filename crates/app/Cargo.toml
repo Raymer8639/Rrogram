@@ -6,5 +6,7 @@ license.workspace = true
 
 [dependencies]
 menu = { path = "../menu" }
+starter = { path = "../starter" }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
+get_envs = { path = "../get_envs" }

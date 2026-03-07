@@ -1,6 +1,11 @@
 [workspace]
-members = ["crates/app", "crates/menu"]
+members = [
+  "crates/app", "crates/get_envs",
+  "crates/menu",
+  "crates/starter",
+]
 resolver = "3"
+
 [workspace.package]
 version = "0.1.0"
 edition = "2024"
@@ -8,4 +13,7 @@ license = "MIT OR Apache-2.0"
 
 [workspace.dependencies]
 tracing = "0.1.44"
-tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
+tracing-subscriber = {
+  version = "0.3.22",
+  features = ["env-filter"]
+}
