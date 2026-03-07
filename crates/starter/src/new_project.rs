@@ -8,7 +8,7 @@ pub fn new_project(rrogram_home: String) {
     let mut save_path: String;
     loop {
         name = get_content::get(Some("name")).unwrap();
-        if name == "".to_string() {
+        if name.is_empty() {
             continue;
         }
         save_path = rrogram_home.clone() + "/saves/" + name.clone().as_str();
