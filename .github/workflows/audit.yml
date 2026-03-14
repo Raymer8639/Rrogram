@@ -13,6 +13,9 @@ on:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      check: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
