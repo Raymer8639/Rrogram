@@ -37,7 +37,7 @@ fn main() -> Result<(), color_eyre::eyre::Report> {
         debug!("Running args command ...");
         match this {
             This::UninstallSelf => {
-                if let Err(_) = std::fs::remove_dir_all(rrogram_home.as_str()) {
+                if std::fs::remove_dir_all(rrogram_home.as_str()).is_err() {
                     error!("No directory");
                     return Err(eyre!("No directory"));
                 }

@@ -5,22 +5,24 @@ use color_eyre::{
 };
 use std::{fs::File, io::BufReader, path::Path};
 use tracing::{debug, error, info};
-use tracing_subscriber::{EnvFilter, Registry, fmt::format::DefaultFields, layer::Layered, reload};
-
+use tracing_subscriber::{
+    EnvFilter, fmt::format::DefaultFields, layer::Layered, registry::Registry, reload::Handle,
+};
+type FilterReloadHandle = Handle<
+    EnvFilter,
+    Layered<
+        tracing_subscriber::fmt::Layer<
+            Registry,
+            DefaultFields,
+            tracing_subscriber::fmt::format::Format,
+            File,
+        >,
+        Registry,
+    >,
+>;
 pub fn continue_project(
     rrogram_home: String,
-    filter_reload_handle: &reload::Handle<
-        EnvFilter,
-        Layered<
-            tracing_subscriber::fmt::Layer<
-                Registry,
-                DefaultFields,
-                tracing_subscriber::fmt::format::Format,
-                File,
-            >,
-            Registry,
-        >,
-    >,
+    filter_reload_handle: &FilterReloadHandle,
 ) -> Result<(), Report> {
     let project_name: String = menu::get_content::get(Some("name")).unwrap();
     let project_path = rrogram_home.clone() + "/saves/" + project_name.as_str();
