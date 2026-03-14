@@ -1,6 +1,6 @@
 [workspace]
 members = [
-  "crates/app", "crates/get_envs",
+  "crates/app", "crates/args", "crates/get_envs",
   "crates/menu",
   "crates/starter",
 ]
@@ -17,3 +17,7 @@ tracing-subscriber = {
   version = "0.3.22",
   features = ["env-filter"]
 }
+tracing-appender = "0.2.4"
+ratatui = "0.30.0"
+crossterm = "0.29.0"
+color-eyre = "0.6.5"
